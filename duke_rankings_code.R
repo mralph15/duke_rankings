@@ -71,7 +71,7 @@ moving_plot <- duke %>%
         legend.title = element_text(size = 14),
         legend.text = element_text(size = 10))
 
-animate(moving_plot, end_pause = 30)
+animate(moving_plot, end_pause = 30, height = 4, width = 6, units = "in", res = 200)
 
 anim_save("duke_rankings_since_2000.gif")
 
