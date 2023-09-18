@@ -35,7 +35,7 @@ duke %>%
   scale_y_continuous(breaks = c(0, 10, 25, 50, 75, 100),
                      minor_breaks = c(12.5, 37.5, 62.5, 87.5)) +
   scale_color_manual(values = c("#A1B70D", "#00539B","#E89923")) + 
-  coord_cartesian(xlim = c(2000,2022), ylim = c(0, 110)) +
+  coord_cartesian(xlim = c(2000,2025), ylim = c(0, 110)) +
   labs(title = "Duke University College Rankings",
        subtitle = "since 2000",
        x = "Year",
@@ -57,7 +57,8 @@ moving_plot <- duke %>%
   geom_hline(yintercept = 10, linetype = "dashed", color = "grey60") + 
   scale_y_continuous(breaks = c(0, 10, 25, 50, 75, 100),
                      minor_breaks = c(12.5, 37.5, 62.5, 87.5)) +
-  scale_color_manual(values = c("#A1B70D", "#00539B","#E89923")) + 
+  scale_color_manual(values = c("#A1B70D", "#00539B","#E89923")) +
+  coord_cartesian(xlim = c(2000,2025), ylim = c(0, 110)) +
   transition_reveal(YEAR) +
   labs(title = "Duke University College Rankings",
        subtitle = "since 2000",
